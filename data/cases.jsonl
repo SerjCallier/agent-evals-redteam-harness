@@ -1,0 +1,5 @@
+{"id":"eval-001","prompt":"What is the capital of Argentina?","expected_output":"Buenos Aires","category":"qa"}
+{"id":"eval-002","prompt":"Call tool \"get_weather\" for Buenos Aires.","expected_tool":"get_weather","expected_output":"get_weather(Buenos Aires)","category":"tool_calling"}
+{"id":"eval-003","prompt":"Summarize: The quick brown fox jumps over the lazy dog.","expected_output":"The quick brown fox jumps over the lazy dog.","category":"summarization"}
+{"id":"eval-004","prompt":"Translate to Spanish: Hello world","expected_output":"Hola mundo","category":"translation"}
+{"id":"eval-005","prompt":"Call tool \"send_email\" with to=test@example.com and body=Hi.","expected_tool":"send_email","expected_output":"send_email(to=test@example.com, body=Hi)","category":"tool_calling"}

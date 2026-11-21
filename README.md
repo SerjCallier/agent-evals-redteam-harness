@@ -173,15 +173,20 @@ agent-evals-redteam-harness/
 
 ---
 
-## Roadmap
+## Feature Matrix & Roadmap
 
-- [x] Deterministic evaluation runner with exact match & tool scoring
-- [x] Offline stub provider for zero-credential unit tests
-- [x] Red-teaming suite (Prompt Injection, Jailbreak, PII, Tool Hijacking)
-- [x] GitHub Actions CI security gate
-- [ ] FastAPI HTTP endpoint for remote evaluation triggers
-- [ ] Automated HTML & Dashboard report generation
-- [ ] Indirect prompt injection (RAG poisoning) probe suite
+### ✅ Implemented & Verified Capabilities
+
+- **Deterministic Evaluation Core:** Exact match scoring, tool-calling accuracy, and p50/p95 latency benchmarking.
+- **Offline Stub Execution:** Zero-credential test execution for deterministic local Pytest suites.
+- **Adversarial Red-Teaming Suite:** Automated probe vectors covering System Prompt Injection, DAN Jailbreaks, PII Masking, and Tool-Calling Hijacking.
+- **CI/CD Security Gate:** GitHub Actions workflow enforcement preventing compromised prompt or code merges.
+
+### 🚀 Upcoming Roadmap Enhancements
+
+- **FastAPI Remote Endpoint:** REST API service wrapper for remote evaluation invocation.
+- **Interactive HTML & Dashboard Reports:** Visual HTML test run exports with latency and accuracy charts.
+- **Indirect Prompt Injection Probes:** Advanced RAG poisoning and secondary document injection test suites.
 
 ---
 

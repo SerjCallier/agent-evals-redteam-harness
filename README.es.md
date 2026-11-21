@@ -174,15 +174,20 @@ agent-evals-redteam-harness/
 
 ---
 
-## Hoja de Ruta (Roadmap)
+## Matriz de Funcionalidades y Hoja de Ruta (Roadmap)
 
-- [x] Runner de evaluación determinista con exact match y scoring de herramientas
-- [x] Proveedor mock offline para unit tests sin credenciales
-- [x] Suite de Red-Teaming (Prompt Injection, Jailbreak, PII, Tool Hijacking)
-- [x] Control de seguridad CI con GitHub Actions
-- [ ] Endpoint HTTP FastAPI para ejecuciones de evaluación remotas
-- [ ] Generación automatizada de reportes HTML y Dashboards
-- [ ] Suite de probes para inyección indirecta de prompts (envenenamiento RAG)
+### ✅ Capacidades Implementadas y Verificadas
+
+- **Core de Evaluación Determinista:** Scoring de coincidencia exacta (Exact Match), precisión en invocación de herramientas (Tool Accuracy) y benchmarking de latencia p50/p95.
+- **Ejecución de Stub Offline:** Pruebas sin necesidad de credenciales para suites Pytest locales 100% deterministas.
+- **Suite de Red-Teaming Adversarial:** Vectores de prueba automatizados que cubren Inyección de Prompt de Sistema, Jailbreaks DAN, Enmascaramiento de PII y Secuestro de Herramientas.
+- **Gate de Seguridad en CI/CD:** Control de workflow en GitHub Actions para impedir fusiones de código o prompts vulnerables.
+
+### 🚀 Mejoras Planeadas en la Hoja de Ruta
+
+- **Endpoint Remoto FastAPI:** Servicio REST API para invocaciones remotas de evaluación.
+- **Reportes HTML y Dashboards Interactivos:** Exportación visual de corridas de test con gráficos de latencia y precisión.
+- **Probes de Inyección Indirecta:** Suite de pruebas para ataques de envenenamiento en RAG e inyecciones secundarias en documentos.
 
 ---
 
